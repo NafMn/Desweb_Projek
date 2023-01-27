@@ -123,7 +123,7 @@ body {
 }
 
 .shop {
-    border: #000 solid 1px;
+
     display: flex;
     width: 100%;
     height: fit-content;
@@ -146,7 +146,6 @@ body {
 .shop .container p {}
 
 .etalase {
-    border: #000 solid 1px;
     width: 100%;
     height: max-content;
     display: flex;
@@ -169,7 +168,7 @@ body {
 }
 
 .barang h2 {
-    text-align: left;
+    text-align: center;
     padding-left: 25px;
 
 }
@@ -221,10 +220,54 @@ footer p {
 
 .nama a {
     color: #fff;
-    padding-bottom: 30px;
+
 }
 
 .nama a span {
     padding: 10px;
 
+}
+
+
+
+/* About */
+
+.main-about {
+    margin-bottom: -2px;
+    margin-top: 5rem;
+    width: fit-content;
+    text-align: justify;
+
+}
+
+.text {
+    width: 400px;
+    margin-left: 200px;
+    margin-top: -10rem;
+}
+
+.main-about .text h2 {
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+
+.orang {
+    float: left;
+    width: 300px;
+    margin-left: 5rem;
+}
+
+
+.aboutfot {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: #3D5A22;
+}
+
+.aboutfot p {
+    padding: 5px;
 }
