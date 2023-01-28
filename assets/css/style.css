@@ -279,3 +279,38 @@ footer p {
     width: 100%;
     margin-top: -10px;
 }
+
+.our-team {
+    width: 100%;
+    border: #000 solid 1px;
+    text-align: center;
+}
+
+.our-team h1 {}
+
+.team {
+    width: 325px;
+    height: 437px;
+    background-color: #142B00;
+    border-radius: 15px;
+    color: #ffffff;
+}
+
+.team img {
+    width: 100%;
+}
+
+.team h2 {
+    font-size: 30px;
+    padding-top: 15px;
+}
+
+.team span {
+    font-size: 20px;
+}
+
+.team p {
+    padding-top: 5px;
+    font-size: 25px;
+    font-style: bold;
+}
