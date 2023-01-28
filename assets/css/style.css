@@ -141,7 +141,7 @@ body {
     padding-top: 20px;
 }
 
-.shop .container p {}
+/* .shop .container p {} */
 
 .etalase {
     width: 100%;
@@ -331,4 +331,30 @@ footer p {
 .team p {
     font-size: 25px;
     font-style: bold;
+}
+
+/* blog */
+
+.main-blog {
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+.main-blog th {
+    padding: 30px;
+}
+
+.main-blog h2 {
+    text-align: left;
+}
+
+.main-blog p {
+    text-align: justify;
+    font-style: normal;
+
+}
+
+.blogimg {
+    border-radius: 15px;
 }
