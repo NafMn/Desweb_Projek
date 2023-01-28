@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +9,7 @@
 
 body {
     background-color: #f5f5f5;
+    font-family: 'poppins';
 }
 
 .nav {
@@ -67,7 +70,6 @@ body {
 }
 
 .text-header {
-    font-family: 'inter';
     padding-top: 100px;
 }
 
@@ -278,15 +280,26 @@ footer p {
 .topbanner img {
     width: 100%;
     margin-top: -10px;
+    box-shadow: #000;
 }
 
+
+/* Team */
 .our-team {
-    width: 100%;
     border: #000 solid 1px;
     text-align: center;
+    margin: 30px;
+
+
 }
 
-.our-team h1 {}
+.container h1 {
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    padding-bottom: 30px;
+}
+
 
 .team {
     width: 325px;
@@ -294,14 +307,20 @@ footer p {
     background-color: #142B00;
     border-radius: 15px;
     color: #ffffff;
+    float: left;
+    margin: 20px;
+    padding: 0px 0px 0px;
+
 }
 
 .team img {
-    width: 100%;
+    max-width: 100%;
+    display: block;
+    height: auto;
 }
 
 .team h2 {
-    font-size: 30px;
+    font-size: 25px;
     padding-top: 15px;
 }
 
@@ -310,7 +329,6 @@ footer p {
 }
 
 .team p {
-    padding-top: 5px;
     font-size: 25px;
     font-style: bold;
 }
