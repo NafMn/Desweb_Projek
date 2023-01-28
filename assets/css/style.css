@@ -326,6 +326,7 @@ footer p {
 
 .team span {
     font-size: 20px;
+    font-weight: 200;
 }
 
 .team p {
@@ -355,6 +356,53 @@ footer p {
 
 }
 
+.main-blog a {
+    color: #000;
+    text-decoration: none;
+}
+
 .blogimg {
     border-radius: 15px;
+}
+
+
+/* sub-blog */
+
+.sub-blog {
+    text-align: center;
+
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.text-blog {
+    margin-top: 1px;
+    padding: 50px;
+}
+
+.text-blog b {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    font-size: 35px;
+
+}
+
+.sub-blog img {
+    width: 600px;
+    height: auto;
+    margin: 10px;
+    padding-top: 30px;
+}
+
+#quote {
+    padding: 10px;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.main-sub {
+    text-align: justify;
+    margin-right: 50px;
+    margin-left: 50px;
 }
