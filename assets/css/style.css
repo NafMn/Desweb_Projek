@@ -363,6 +363,9 @@ footer p {
 
 .blogimg {
     border-radius: 15px;
+    max-width: 350px;
+    height: 100%;
+
 }
 
 
