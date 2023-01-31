@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang | RNB</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'poppins';
+        }
+
+        /* nav */
+        .nav {
+            position: absolute;
+            top: 0;
+            background-color: #3D5A22;
+            height: 60px;
+            max-width: 1080px;
+            width: 100%;
+            padding-right: 100px;
+            border-radius: 15px;
+
+        }
+
+        .logo {
+            height: 73px;
+            margin-bottom: -13px;
+            object-fit: cover;
+            width: 86px;
+            cursor: pointer;
+
+
+        }
+
+        .nav ul {
+            float: right;
+            list-style: none;
+            padding-bottom: 50px;
+        }
+
+        .nav ul li {
+            text-align: center;
+            float: left;
+        }
+
+        .nav ul li:hover {
+            background: #ffffff;
+        }
+
+        .nav ul li:hover a {
+            color: #000;
+        }
+
+        .nav ul li a {
+            display: block;
+            padding: 25px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* keranjang */
+        .Cart-Container {
+            width: 70%;
+            height: 85%;
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0px 25px 40px #3D5A22;
+        }
+
+
+        /* Header dong */
+        .Header {
+            margin: auto;
+            width: 90%;
+            height: 15%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .Heading {
+            font-size: 20px;
+            font-family: ‘Open Sans’;
+            font-weight: 700;
+            color: #2F3841;
+        }
+
+        .Action {
+            font-size: 14px;
+            font-family: ‘Open Sans’;
+            font-weight: 600;
+            color: #E44C4C;
+            cursor: pointer;
+            border-bottom: 1px solid #E44C4C;
+        }
+
+        /* Produk */
+
+        .Cart-Items {
+            margin: auto;
+            width: 90%;
+            height: 30%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .image-box {
+            width: 15%;
+            text-align: center;
+        }
+
+        .about {
+            height: 100%;
+        }
+
+        .title {
+            padding-top: 5px;
+            line-height: 10px;
+            font-size: 32px;
+            font-weight: 800;
+            color: #202020;
+        }
+
+        .subtitle {
+            line-height: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            color: #909090;
+        }
+
+        /* counter  awokawok */
+        .counter {
+            width: 15%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #d9d9d9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: 900;
+            color: #202020;
+            cursor: pointer;
+        }
+
+        .count {
+            font-size: 20px;
+            font-weight: 900;
+            color: #202020;
+        }
+
+        /* Harga */
+        .prices {
+            height: 100%;
+            text-align: right;
+        }
+
+        .amount {
+            padding-top: 20px;
+            font-size: 26px;
+            font-weight: 800;
+            color: #202020;
+        }
+
+        .save {
+            padding-top: 5px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #1687d9;
+            cursor: pointer;
+        }
+
+        .remove {
+            padding-top: 5px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #E44C4C;
+            cursor: pointer;
+        }
+
+        /* cekout */
+        hr {
+            width: 66%;
+            float: right;
+            margin-right: 5%;
+        }
+
+        .checkout {
+            float: right;
+            margin-right: 5%;
+            width: 28%;
+        }
+
+        .total {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .Subtotal {
+            font-size: 22px;
+            font-family: ‘Open Sans’;
+            font-weight: 700;
+            color: #202020;
+        }
+
+        .items {
+            font-size: 16px;
+            font-family: ‘Open Sans’;
+            font-weight: 500;
+            color: #909090;
+            line-height: 10px;
+        }
+
+        .total-amount {
+            font-size: 36px;
+            font-family: ‘Open Sans’;
+            font-weight: 900;
+            color: #202020;
+        }
+
+        .button {
+            margin-top: 5px;
+            width: 100%;
+            height: 40px;
+            border: none;
+            background: linear-gradient(to bottom right, #c4ffcb, #7fc83b);
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            font-family: ‘Open Sans’;
+            font-weight: 600;
+            color: #202020;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <img class="logo" src="assets/images/Logo.png" alt="">
+        <ul>
+            <li><a class="active" href="index.html">Beranda</a></li>
+            <li> <a href="about.html">Tentang Kami</a></li>
+            <li><a href="blog.html">Artikel</a></li>
+            <li><a href="team.html">Team</a></li>
+        </ul>
+    </div>
+    <div class="Cart-Container">
+        <div class="Header">
+            <h3 class="Heading">Shopping Cart</h3>
+            <h5 class="Action">Remove all</h5>
+        </div>
+        <div class="Cart-Items">
+            <div class="image-box">
+                <img src="assets/images/beef.png" height="120px" />
+            </div>
+            <div class="about">
+                <h1 class="title">Beef</h1>
+                <h3 class="subtitle">100g</h3>
+                <img src="assets/images/fruit.png" height="30px" />
+            </div>
+            <div class="counter"></div>
+            <div class="prices"></div>
+            <div class="counter">
+                <div class="btn">+</div>
+                <div class="count">2</div>
+                <div class="btn">-</div>
+            </div>
+            <div class="prices">
+                <div class="amount">Rp. 105.000</div>
+                <div class="save"><u>Simpan Untuk Nanti</u></div>
+                <div class="remove"><u>Hapus</u></div>
+            </div>
+        </div>
+        <hr>
+        <div class="checkout">
+            <div class="total">
+                <div>
+                    <div class="Subtotal">Sub-Total</div>
+                    <div class="items">2 items</div>
+                </div>
+                <div class="total-amount">Rp. 210.000</div>
+            </div>
+            <button class="button">Checkout</button>
+        </div>
+    </div>
+</body>
+
+</html>
